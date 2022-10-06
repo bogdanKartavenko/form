@@ -12,13 +12,25 @@
     <form action="https://sandbox.merge.academy/api/message" method="POST">
         <p>
             <label for="name">Ім’я:</label>
-            <input name="name" type="text" id="name" required>
+            <input 
+            name="name" 
+            type="text" 
+            id="name" 
+            required 
+            minlength="2"
+            maxlength="40">
         </p>
         <p>
             <label for="say">Повідомлення:</label>
-            <input name="message" type="text" id="say" required>
+            <input 
+            name="message" 
+            type="text" 
+            id="say" 
+            required 
+            minlength="2"
+            maxlength="160">
         </p>
-        <button>Відправити</button>
+        <button type="submit">Відправити</button>
     </form>
 </body>
 
