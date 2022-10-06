@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
-    
+    <form action="https://sandbox.merge.academy/api/message" method="POST">
+        <p>
+            <label for="name">Ім’я:</label>
+            <input 
+            name="name" 
+            type="text" 
+            id="name" 
+            required 
+            minlength="2"
+            maxlength="40">
+        </p>
+        <p>
+            <label for="say">Повідомлення:</label>
+            <input 
+            name="message" 
+            type="text" 
+            id="say" 
+            required 
+            minlength="2"
+            maxlength="160">
+        </p>
+        <button type="submit">Відправити</button>
+    </form>
 </body>
+
 </html>
